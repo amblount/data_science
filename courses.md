@@ -13,3 +13,5 @@ Here are a few courses that dive deeper into relevant topics
 - [6.803 human intelligence enterprise](https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-803-the-human-intelligence-enterprise-spring-2006/)
 
 - [how to process analyze and visualize data](https://ocw.mit.edu/resources/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/)
+
+- [intro to statistical learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
