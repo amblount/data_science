@@ -15,3 +15,9 @@ Here are a few courses that dive deeper into relevant topics
 - [how to process analyze and visualize data](https://ocw.mit.edu/resources/res-6-009-how-to-process-analyze-and-visualize-data-january-iap-2012/)
 
 - [intro to statistical learning](https://web.stanford.edu/~hastie/ElemStatLearn/)
+
+- [Stocastic Calculus and it's applications](http://www.statslab.cam.ac.uk/~beresty/teach/StoCal/sc3.pdf)
+
+- [Options Futures and other derivatives](http://polymer.bu.edu/hes/rp-hull12.pdf)
+
+
