@@ -20,4 +20,6 @@ Here are a few courses that dive deeper into relevant topics
 
 - [Options Futures and other derivatives](http://polymer.bu.edu/hes/rp-hull12.pdf)
 
+- [algorithms for big data](https://www.sketchingbigdata.org)
+
 
