@@ -22,4 +22,6 @@ Here are a few courses that dive deeper into relevant topics
 
 - [algorithms for big data](https://www.sketchingbigdata.org)
 
+- [analyzing big data w/ twitter](http://blogs.ischool.berkeley.edu/i290-abdt-s12/)
+
 
