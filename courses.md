@@ -24,4 +24,22 @@ Here are a few courses that dive deeper into relevant topics
 
 - [analyzing big data w/ twitter](http://blogs.ischool.berkeley.edu/i290-abdt-s12/)
 
+- [Cal Tech Learning from data](https://work.caltech.edu/telecourse.html)
+
+- [Microsoft Professional Program - Data Science](https://academy.microsoft.com/en-us/tracks/data-science)
+
+- [Intro to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science)
+
+- [Google Brain Residency](https://research.googleblog.com/2017/07/the-google-brain-residency-program-one.html)
+
+- [Deep Learning & Reinforcement Learning Summer School Montreal](http://videolectures.net/deeplearning2017_montreal/)
+
+- [Deep Mind Publications](https://deepmind.com/research/publications/)
+
+- [Neural Discrete representation learning](https://arxiv.org/pdf/1711.00937.pdf)
+
+- [Fast.ai](http://course.fast.ai/)
+
+- [Machine Learning slides](https://d18ky98rnyall9.cloudfront.net/_974fa7509d583eabb592839f9716fe25_Lecture1.pdf?Expires=1513123200&Signature=CTnROtrqN~4mPNHjo~k81ao6h~35CZOIyCfw7z-b7vYqsZNrFIFX2jJlFun0v9coeG6DLZvi6tRExIkIYGMGMP4SsEe9E6XGckOPtNXo-XOqdE2Ojq0U6yH7LSCGUStJzHmBlzGboLIsAZpWV0GMofk~T7VD1D9eMQo0XhFIyjA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+
 
