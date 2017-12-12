@@ -1,5 +1,7 @@
 Here are a few courses that dive deeper into relevant topics
 
+- [machine learning 101](https://docs.google.com/presentation/d/1kSuQyW5DTnkVaZEjGYCkfOxvzCqGEFzWBy4e9Uedd9k/preview?slide=id.g168a3288f7_0_58)
+
 - [CS-224n Natural language procesing w/deep learning](http://web.stanford.edu/class/cs224n/)
   - TEXT: [Sppech and language processing](https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)
   - NLP- [N-Grams](https://lagunita.stanford.edu/c4x/Engineering/CS-224N/asset/slp4.pdf)
@@ -41,5 +43,6 @@ Here are a few courses that dive deeper into relevant topics
 - [Fast.ai](http://course.fast.ai/)
 
 - [Machine Learning slides](https://d18ky98rnyall9.cloudfront.net/_974fa7509d583eabb592839f9716fe25_Lecture1.pdf?Expires=1513123200&Signature=CTnROtrqN~4mPNHjo~k81ao6h~35CZOIyCfw7z-b7vYqsZNrFIFX2jJlFun0v9coeG6DLZvi6tRExIkIYGMGMP4SsEe9E6XGckOPtNXo-XOqdE2Ojq0U6yH7LSCGUStJzHmBlzGboLIsAZpWV0GMofk~T7VD1D9eMQo0XhFIyjA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+
 
 
