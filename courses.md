@@ -44,5 +44,8 @@ Here are a few courses that dive deeper into relevant topics
 
 - [Machine Learning slides](https://d18ky98rnyall9.cloudfront.net/_974fa7509d583eabb592839f9716fe25_Lecture1.pdf?Expires=1513123200&Signature=CTnROtrqN~4mPNHjo~k81ao6h~35CZOIyCfw7z-b7vYqsZNrFIFX2jJlFun0v9coeG6DLZvi6tRExIkIYGMGMP4SsEe9E6XGckOPtNXo-XOqdE2Ojq0U6yH7LSCGUStJzHmBlzGboLIsAZpWV0GMofk~T7VD1D9eMQo0XhFIyjA_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
+- [How to think like a computer scientist](http://interactivepython.org/runestone/static/thinkcspy/index.html)
 
+- [Proble, solving with data structures and algorithms](http://interactivepython.org/runestone/static/pythonds/index.html)
 
+- [Python Data Science handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
