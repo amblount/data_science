@@ -7,7 +7,7 @@ Contents
 
 Preface xxvii
 
-1 Introduction 1
+### 1 Introduction 1
   
  - 1.1 Machine learning: what and why? 1
  - 1.1.1 Types of machine learning 2
@@ -30,477 +30,493 @@ Preface xxvii
  - 1.4.8 Model selection 22
  - 1.4.9 No free lunch theorem 24
 
-2 Probability 27
+### 2 Probability 27
 
-  2.1 Introduction 27
-  2.2 A brief review of probability theory 28
-  2.2.1 Discrete random variables 28
-  2.2.2 Fundamental rules 28
-  2.2.3 Bayes rule 29
-  2.2.4 Independence and conditional independence 30
-  2.2.5 Continuous random variables 32
+ - 2.1 Introduction 27
+ - 2.2 A brief review of probability theory 28
+ - 2.2.1 Discrete random variables 28
+ - 2.2.2 Fundamental rules 28
+ - 2.2.3 Bayes rule 29
+ - 2.2.4 Independence and conditional independence 30
+ - 2.2.5 Continuous random variables 32 
+ 
+#### viii CONTENTS
 
-viii CONTENTS
-  2.2.6 Quantiles 33
-  2.2.7 Mean and variance 33
-  2.3 Some common discrete distributions 34
-  2.3.1 The binomial and Bernoulli distributions 34
-  2.3.2 The multinomial and multinoulli distributions 35
-  2.3.3 The Poisson distribution 37
-  2.3.4 The empirical distribution 37
-  2.4 Some common continuous distributions 38
-  2.4.1 Gaussian (normal) distribution 38
-  2.4.2 Degenerate pdf 39
-  2.4.3 The Laplace distribution 41
-  2.4.4 The gamma distribution 41
-  2.4.5 The beta distribution 42
-  2.4.6 Pareto distribution 43
-  2.5 Joint probability distributions 44
-  2.5.1 Covariance and correlation 44
-  2.5.2 The multivariate Gaussian 46
-  2.5.3 Multivariate Student t distribution 46
-  2.5.4 Dirichlet distribution 47
-  2.6 Transformations of random variables 49
-  2.6.1 Linear transformations 49
-  2.6.2 General transformations 50
-  2.6.3 Central limit theorem 51
-  2.7 Monte Carlo approximation 52
-  2.7.1 Example: change of variables, the MC way 53
-  2.7.2 Example: estimating π by Monte Carlo integration 54
-  2.7.3 Accuracy of Monte Carlo approximation 54
-  2.8 Information theory 56
-  2.8.1 Entropy 56
-  2.8.2 KL divergence 57
-  2.8.3 Mutual information 59
+ - 2.2.6 Quantiles 33
+ - 2.2.7 Mean and variance 33
+ - 2.3 Some common discrete distributions 34
+ - 2.3.1 The binomial and Bernoulli distributions 34
+ - 2.3.2 The multinomial and multinoulli distributions 35
+ - 2.3.3 The Poisson distribution 37
+ - 2.3.4 The empirical distribution 37
+ - 2.4 Some common continuous distributions 38
+ - 2.4.1 Gaussian (normal) distribution 38
+ - 2.4.2 Degenerate pdf 39
+ - 2.4.3 The Laplace distribution 41
+ - 2.4.4 The gamma distribution 41
+ - 2.4.5 The beta distribution 42
+ - 2.4.6 Pareto distribution 43
+ - 2.5 Joint probability distributions 44
+ - 2.5.1 Covariance and correlation 44
+ - 2.5.2 The multivariate Gaussian 46
+ - 2.5.3 Multivariate Student t distribution 46
+ - 2.5.4 Dirichlet distribution 47
+ - 2.6 Transformations of random variables 49
+ - 2.6.1 Linear transformations 49
+ - 2.6.2 General transformations 50
+ - 2.6.3 Central limit theorem 51
+ - 2.7 Monte Carlo approximation 52
+ - 2.7.1 Example: change of variables, the MC way 53
+ - 2.7.2 Example: estimating π by Monte Carlo integration 54
+ - 2.7.3 Accuracy of Monte Carlo approximation 54
+ - 2.8 Information theory 56
+ - 2.8.1 Entropy 56
+ - 2.8.2 KL divergence 57
+ - 2.8.3 Mutual information 59
   
-3 Generative models for discrete data 65
+### 3 Generative models for discrete data 65
 
-  3.1 Introduction 65
-  3.2 Bayesian concept learning 65
-  3.2.1 Likelihood 67
-  3.2.2 Prior 67
-  3.2.3 Posterior 68
-  3.2.4 Posterior predictive distribution 71
-  3.2.5 A more complex prior 72
-  3.3 The beta-binomial model 72
-  3.3.1 Likelihood 73
-  3.3.2 Prior 74
-  3.3.3 Posterior 75
-  3.3.4 Posterior predictive distribution 77
-  CONTENTS ix
-  3.4 The Dirichlet-multinomial model 78
-  3.4.1 Likelihood 79
-  3.4.2 Prior 79
-  3.4.3 Posterior 79
-  3.4.4 Posterior predictive 81
-  3.5 Naive Bayes classifiers 82
-  3.5.1 Model fitting 83
-  3.5.2 Using the model for prediction 85
-  3.5.3 The log-sum-exp trick 86
-  3.5.4 Feature selection using mutual information 86
-  3.5.5 Classifying documents using bag of words 87
+ - 3.1 Introduction 65
+ - 3.2 Bayesian concept learning 65
+ - 3.2.1 Likelihood 67
+ - 3.2.2 Prior 67
+ - 3.2.3 Posterior 68
+ - 3.2.4 Posterior predictive distribution 71
+ - 3.2.5 A more complex prior 72
+ - 3.3 The beta-binomial model 72
+ - 3.3.1 Likelihood 73
+ - 3.3.2 Prior 74
+ - 3.3.3 Posterior 75
+ - 3.3.4 Posterior predictive distribution 77
+ 
+ #### CONTENTS ix
   
-4 Gaussian models 97
-
-  4.1 Introduction 97
-  4.1.1 Notation 97
-  4.1.2 Basics 97
-  4.1.3 MLE for an MVN 99
-  4.1.4 Maximum entropy derivation of the Gaussian * 101
-  4.2 Gaussian discriminant analysis 101
-  4.2.1 Quadratic discriminant analysis (QDA) 102
-  4.2.2 Linear discriminant analysis (LDA) 103
-  4.2.3 Two-class LDA 104
-  4.2.4 MLE for discriminant analysis 106
-  4.2.5 Strategies for preventing overfitting 106
-  4.2.6 Regularized LDA * 107
-  4.2.7 Diagonal LDA 108
-  4.2.8 Nearest shrunken centroids classifier * 109
-  4.3 Inference in jointly Gaussian distributions 110
-  4.3.1 Statement of the result 111
-  4.3.2 Examples 111
-  4.3.3 Information form 115
-  4.3.4 Proof of the result * 116
-  4.4 Linear Gaussian systems 119
-  4.4.1 Statement of the result 119
-  4.4.2 Examples 120
-  4.4.3 Proof of the result * 124
-  4.5 Digression: The Wishart distribution * 125
-  4.5.1 Inverse Wishart distribution 126
-  4.5.2 Visualizing the Wishart distribution * 127
-  4.6 Inferring the parameters of an MVN 127
-  4.6.1 Posterior distribution of μ 128
-  4.6.2 Posterior distribution of Σ * 128
-  4.6.3 Posterior distribution of μ and Σ * 132
-  4.6.4 Sensor fusion with unknown precisions * 138
+ - 3.4 The Dirichlet-multinomial model 78
+ - 3.4.1 Likelihood 79
+ - 3.4.2 Prior 79
+ - 3.4.3 Posterior 79
+ - 3.4.4 Posterior predictive 81
+ - 3.5 Naive Bayes classifiers 82
+ - 3.5.1 Model fitting 83
+ - 3.5.2 Using the model for prediction 85
+ - 3.5.3 The log-sum-exp trick 86
+ - 3.5.4 Feature selection using mutual information 86
+ - 3.5.5 Classifying documents using bag of words 87
   
-x CONTENTS
+### 4 Gaussian models 97
 
-5 Bayesian statistics 149
-
-  5.1 Introduction 149
-  5.2 Summarizing posterior distributions 149
-  5.2.1 MAP estimation 149
-  5.2.2 Credible intervals 152
-  5.2.3 Inference for a difference in proportions 154
-  5.3 Bayesian model selection 155
-  5.3.1 Bayesian Occam’s razor 156
-  5.3.2 Computing the marginal likelihood (evidence) 158
-  5.3.3 Bayes factors 163
-  5.3.4 Jeffreys-Lindley paradox * 164
-  5.4 Priors 165
-  5.4.1 Uninformative priors 165
-  5.4.2 Jeffreys priors * 166
-  5.4.3 Robust priors 168
-  5.4.4 Mixtures of conjugate priors 168
-  5.5 Hierarchical Bayes 171
-  5.5.1 Example: modeling related cancer rates 171
-  5.6 Empirical Bayes 172
-  5.6.1 Example: beta-binomial model 173
-  5.6.2 Example: Gaussian-Gaussian model 173
-  5.7 Bayesian decision theory 176
-  5.7.1 Bayes estimators for common loss functions 177
-  5.7.2 The false positive vs false negative tradeoff 180
-  5.7.3 Other topics * 184
+ - 4.1 Introduction 97
+ - 4.1.1 Notation 97
+ - 4.1.2 Basics 97
+ - 4.1.3 MLE for an MVN 99
+ - 4.1.4 Maximum entropy derivation of the Gaussian * 101
+ - 4.2 Gaussian discriminant analysis 101
+ - 4.2.1 Quadratic discriminant analysis (QDA) 102
+ - 4.2.2 Linear discriminant analysis (LDA) 103
+ - 4.2.3 Two-class LDA 104
+ - 4.2.4 MLE for discriminant analysis 106
+ - 4.2.5 Strategies for preventing overfitting 106
+ - 4.2.6 Regularized LDA * 107
+ - 4.2.7 Diagonal LDA 108
+ - 4.2.8 Nearest shrunken centroids classifier * 109
+ - 4.3 Inference in jointly Gaussian distributions 110
+ - 4.3.1 Statement of the result 111
+ - 4.3.2 Examples 111
+ - 4.3.3 Information form 115
+ - 4.3.4 Proof of the result * 116
+ - 4.4 Linear Gaussian systems 119
+ - 4.4.1 Statement of the result 119
+ - 4.4.2 Examples 120
+ - 4.4.3 Proof of the result * 124
+ - 4.5 Digression: The Wishart distribution * 125
+ - 4.5.1 Inverse Wishart distribution 126
+ - 4.5.2 Visualizing the Wishart distribution * 127
+ - 4.6 Inferring the parameters of an MVN 127
+ - 4.6.1 Posterior distribution of μ 128
+ - 4.6.2 Posterior distribution of Σ * 128
+ - 4.6.3 Posterior distribution of μ and Σ * 132
+ - 4.6.4 Sensor fusion with unknown precisions * 138
   
-6 Frequentist statistics 191
+#### x CONTENTS
 
-  6.1 Introduction 191
-  6.2 Sampling distribution of an estimator 191
-  6.2.1 Bootstrap 192
-  6.2.2 Large sample theory for the MLE * 193
-  6.3 Frequentist decision theory 194
-  6.3.1 Bayes risk 195
-  6.3.2 Minimax risk 196
-  6.3.3 Admissible estimators 197
-  6.4 Desirable properties of estimators 200
-  6.4.1 Consistent estimators 200
-  6.4.2 Unbiased estimators 200
-  6.4.3 Minimum variance estimators 201
-  6.4.4 The bias-variance tradeoff 202
-  6.5 Empirical risk minimization 204
-  6.5.1 Regularized risk minimization 205
-  6.5.2 Structural risk minimization 206
-  6.5.3 Estimating the risk using cross validation 206
-  6.5.4 Upper bounding the risk using statistical learning theory * 209
-  CONTENTS xi
-  6.5.5 Surrogate loss functions 210
-  6.6 Pathologies of frequentist statistics * 211
-  6.6.1 Counter-intuitive behavior of confidence intervals 212
-  6.6.2 p-values considered harmful 213
-  6.6.3 The likelihood principle 214
-  6.6.4 Why isn’t everyone a Bayesian? 215
+### 5 Bayesian statistics 149
+
+ - 5.1 Introduction 149
+ - 5.2 Summarizing posterior distributions 149
+ - 5.2.1 MAP estimation 149
+ - 5.2.2 Credible intervals 152
+ - 5.2.3 Inference for a difference in proportions 154
+ - 5.3 Bayesian model selection 155
+ - 5.3.1 Bayesian Occam’s razor 156
+ - 5.3.2 Computing the marginal likelihood (evidence) 158
+ - 5.3.3 Bayes factors 163
+ - 5.3.4 Jeffreys-Lindley paradox * 164
+ - 5.4 Priors 165
+ - 5.4.1 Uninformative priors 165
+ - 5.4.2 Jeffreys priors * 166
+ - 5.4.3 Robust priors 168
+ - 5.4.4 Mixtures of conjugate priors 168
+ - 5.5 Hierarchical Bayes 171
+ - 5.5.1 Example: modeling related cancer rates 171
+ - 5.6 Empirical Bayes 172
+ - 5.6.1 Example: beta-binomial model 173
+ - 5.6.2 Example: Gaussian-Gaussian model 173
+ - 5.7 Bayesian decision theory 176
+ - 5.7.1 Bayes estimators for common loss functions 177
+ - 5.7.2 The false positive vs false negative tradeoff 180
+ - 5.7.3 Other topics * 184
   
-7 Linear regression 217
+### 6 Frequentist statistics 191
 
-  7.1 Introduction 217
-  7.2 Model specification 217
-  7.3 Maximum likelihood estimation (least squares) 217
-  7.3.1 Derivation of the MLE 219
-  7.3.2 Geometric interpretation 220
-  7.3.3 Convexity 221
-  7.4 Robust linear regression * 223
-  7.5 Ridge regression 225
-  7.5.1 Basic idea 225
-  7.5.2 Numerically stable computation * 227
-  7.5.3 Connection with PCA * 228
-  7.5.4 Regularization effects of big data 230
-  7.6 Bayesian linear regression 231
-  7.6.1 Computing the posterior 232
-  7.6.2 Computing the posterior predictive 233
-  7.6.3 Bayesian inference when σ2 is unknown * 234
-  7.6.4 EB for linear regression (evidence procedure) 238
+ - 6.1 Introduction 191
+ - 6.2 Sampling distribution of an estimator 191
+ - 6.2.1 Bootstrap 192
+ - 6.2.2 Large sample theory for the MLE * 193
+ - 6.3 Frequentist decision theory 194
+ - 6.3.1 Bayes risk 195
+ - 6.3.2 Minimax risk 196
+ - 6.3.3 Admissible estimators 197
+ - 6.4 Desirable properties of estimators 200
+ - 6.4.1 Consistent estimators 200
+ - 6.4.2 Unbiased estimators 200
+ - 6.4.3 Minimum variance estimators 201
+ - 6.4.4 The bias-variance tradeoff 202
+ - 6.5 Empirical risk minimization 204
+ - 6.5.1 Regularized risk minimization 205
+ - 6.5.2 Structural risk minimization 206
+ - 6.5.3 Estimating the risk using cross validation 206
+ - 6.5.4 Upper bounding the risk using statistical learning theory * 209
+ 
+ #### CONTENTS xi
   
-8 Logistic regression 245
-
-  8.1 Introduction 245
-  8.2 Model specification 245
-  8.3 Model fitting 245
-  8.3.1 MLE 246
-  8.3.2 Steepest descent 247
-  8.3.3 Newton’s method 249
-  8.3.4 Iteratively reweighted least squares (IRLS) 250
-  8.3.5 Quasi-Newton (variable metric) methods 251
-  8.3.6 2 regularization 252
-  8.3.7 Multi-class logistic regression 252
-  8.4 Bayesian logistic regression 254
-  8.4.1 Laplace approximation 255
-  8.4.2 Derivation of the BIC 255
-  8.4.3 Gaussian approximation for logistic regression 256
-  8.4.4 Approximating the posterior predictive 256
-  8.4.5 Residual analysis (outlier detection) * 260
-  8.5 Online learning and stochastic optimization 261
-  8.5.1 Online learning and regret minimization 262
-  xii CONTENTS
-  8.5.2 Stochastic optimization and risk minimization 262
-  8.5.3 The LMS algorithm 264
-  8.5.4 The perceptron algorithm 265
-  8.5.5 A Bayesian view 266
-  8.6 Generative vs discriminative classifiers 267
-  8.6.1 Pros and cons of each approach 268
-  8.6.2 Dealing with missing data 269
-  8.6.3 Fisher’s linear discriminant analysis (FLDA) * 271
+ - 6.5.5 Surrogate loss functions 210
+ - 6.6 Pathologies of frequentist statistics * 211
+ - 6.6.1 Counter-intuitive behavior of confidence intervals 212
+ - 6.6.2 p-values considered harmful 213
+ - 6.6.3 The likelihood principle 214
+ - 6.6.4 Why isn’t everyone a Bayesian? 215
   
-9 Generalized linear models and the exponential family 281
+### 7 Linear regression 217
 
-  9.1 Introduction 281
-  9.2 The exponential family 281
-  9.2.1 Definition 282
-  9.2.2 Examples 282
-  9.2.3 Log partition function 284
-  9.2.4 MLE for the exponential family 286
-  9.2.5 Bayes for the exponential family * 287
-  9.2.6 Maximum entropy derivation of the exponential family * 289
-  9.3 Generalized linear models (GLMs) 290
-  9.3.1 Basics 290
-  9.3.2 ML and MAP estimation 292
-  9.3.3 Bayesian inference 293
-  9.4 Probit regression 293
-  9.4.1 ML/MAP estimation using gradient-based optimization 294
-  9.4.2 Latent variable interpretation 294
-  9.4.3 Ordinal probit regression * 295
-  9.4.4 Multinomial probit models * 295
-  9.5 Multi-task learning 296
-  9.5.1 Hierarchical Bayes for multi-task learning 296
-  9.5.2 Application to personalized email spam filtering 296
-  9.5.3 Application to domain adaptation 297
-  9.5.4 Other kinds of prior 297
-  9.6 Generalized linear mixed models * 298
-  9.6.1 Example: semi-parametric GLMMs for medical data 298
-  9.6.2 Computational issues 300
-  9.7 Learning to rank * 300
-  9.7.1 The pointwise approach 301
-  9.7.2 The pairwise approach 301
-  9.7.3 The listwise approach 302
-  9.7.4 Loss functions for ranking 303
+ - 7.1 Introduction 217
+ - 7.2 Model specification 217
+ - 7.3 Maximum likelihood estimation (least squares) 217
+ - 7.3.1 Derivation of the MLE 219
+ - 7.3.2 Geometric interpretation 220
+ - 7.3.3 Convexity 221
+ - 7.4 Robust linear regression * 223
+ - 7.5 Ridge regression 225
+ - 7.5.1 Basic idea 225
+ - 7.5.2 Numerically stable computation * 227
+ - 7.5.3 Connection with PCA * 228
+ - 7.5.4 Regularization effects of big data 230
+ - 7.6 Bayesian linear regression 231
+ - 7.6.1 Computing the posterior 232
+ - 7.6.2 Computing the posterior predictive 233
+ - 7.6.3 Bayesian inference when σ2 is unknown * 234
+ - 7.6.4 EB for linear regression (evidence procedure) 238
   
-10 Directed graphical models (Bayes nets) 307
+### 8 Logistic regression 245
 
-  10.1 Introduction 307
-  10.1.1 Chain rule 307
-  10.1.2 Conditional independence 308
-  CONTENTS xiii
-  10.1.3 Graphical models 308
-  10.1.4 Graph terminology 309
-  10.1.5 Directed graphical models 310
-  10.2 Examples 311
-  10.2.1 Naive Bayes classifiers 311
-  10.2.2 Markov and hidden Markov models 312
-  10.2.3 Medical diagnosis 313
-  10.2.4 Genetic linkage analysis * 315
-  10.2.5 Directed Gaussian graphical models * 318
-  10.3 Inference 319
-  10.4 Learning 320
-  10.4.1 Plate notation 320
-  10.4.2 Learning from complete data 322
-  10.4.3 Learning with missing and/or latent variables 323
-  10.5 Conditional independence properties of DGMs 324
-  10.5.1 d-separation and the Bayes Ball algorithm (global Markov
+ - 8.1 Introduction 245
+ - 8.2 Model specification 245
+ - 8.3 Model fitting 245
+ - 8.3.1 MLE 246
+ - 8.3.2 Steepest descent 247
+ - 8.3.3 Newton’s method 249
+ - 8.3.4 Iteratively reweighted least squares (IRLS) 250
+ - 8.3.5 Quasi-Newton (variable metric) methods 251
+ - 8.3.6 2 regularization 252
+ - 8.3.7 Multi-class logistic regression 252
+ - 8.4 Bayesian logistic regression 254
+ - 8.4.1 Laplace approximation 255
+ - 8.4.2 Derivation of the BIC 255
+ - 8.4.3 Gaussian approximation for logistic regression 256
+ - 8.4.4 Approximating the posterior predictive 256
+ - 8.4.5 Residual analysis (outlier detection) * 260
+ - 8.5 Online learning and stochastic optimization 261
+ - 8.5.1 Online learning and regret minimization 262
+  
+  #### xii CONTENTS
+ - 8.5.2 Stochastic optimization and risk minimization 262
+ - 8.5.3 The LMS algorithm 264
+ - 8.5.4 The perceptron algorithm 265
+ - 8.5.5 A Bayesian view 266
+ - 8.6 Generative vs discriminative classifiers 267
+ - 8.6.1 Pros and cons of each approach 268
+ - 8.6.2 Dealing with missing data 269
+ - 8.6.3 Fisher’s linear discriminant analysis (FLDA) * 271
+  
+### 9 Generalized linear models and the exponential family 281
+
+ - 9.1 Introduction 281
+ - 9.2 The exponential family 281
+ - 9.2.1 Definition 282
+ - 9.2.2 Examples 282
+ - 9.2.3 Log partition function 284
+ - 9.2.4 MLE for the exponential family 286
+ - 9.2.5 Bayes for the exponential family * 287
+ - 9.2.6 Maximum entropy derivation of the exponential family * 289
+ - 9.3 Generalized linear models (GLMs) 290
+ - 9.3.1 Basics 290
+ - 9.3.2 ML and MAP estimation 292
+ - 9.3.3 Bayesian inference 293
+ - 9.4 Probit regression 293
+ - 9.4.1 ML/MAP estimation using gradient-based optimization 294
+ - 9.4.2 Latent variable interpretation 294
+ - 9.4.3 Ordinal probit regression * 295
+ - 9.4.4 Multinomial probit models * 295
+ - 9.5 Multi-task learning 296
+ - 9.5.1 Hierarchical Bayes for multi-task learning 296
+ - 9.5.2 Application to personalized email spam filtering 296
+ - 9.5.3 Application to domain adaptation 297
+ - 9.5.4 Other kinds of prior 297
+ - 9.6 Generalized linear mixed models * 298
+ - 9.6.1 Example: semi-parametric GLMMs for medical data 298
+ - 9.6.2 Computational issues 300
+ - 9.7 Learning to rank * 300
+ - 9.7.1 The pointwise approach 301
+ - 9.7.2 The pairwise approach 301
+ - 9.7.3 The listwise approach 302
+ - 9.7.4 Loss functions for ranking 303
+  
+### 10 Directed graphical models (Bayes nets) 307
+
+ - 10.1 Introduction 307
+ - 10.1.1 Chain rule 307
+ - 10.1.2 Conditional independence 308
+  
+  #### CONTENTS xiii
+  
+ - 10.1.3 Graphical models 308
+ - 10.1.4 Graph terminology 309
+ - 10.1.5 Directed graphical models 310
+ - 10.2 Examples 311
+ - 10.2.1 Naive Bayes classifiers 311
+ - 10.2.2 Markov and hidden Markov models 312
+ - 10.2.3 Medical diagnosis 313
+ - 10.2.4 Genetic linkage analysis * 315
+ - 10.2.5 Directed Gaussian graphical models * 318
+ - 10.3 Inference 319
+ - 10.4 Learning 320
+ - 10.4.1 Plate notation 320
+ - 10.4.2 Learning from complete data 322
+ - 10.4.3 Learning with missing and/or latent variables 323
+ - 10.5 Conditional independence properties of DGMs 324
+ - 10.5.1 d-separation and the Bayes Ball algorithm (global Markov
   properties) 324
-  10.5.2 Other Markov properties of DGMs 327
-  10.5.3 Markov blanket and full conditionals 327
-  10.6 Influence (decision) diagrams * 328
+ - 10.5.2 Other Markov properties of DGMs 327
+ - 10.5.3 Markov blanket and full conditionals 327
+ - 10.6 Influence (decision) diagrams * 328
   
-11 Mixture models and the EM algorithm 337
+### 11 Mixture models and the EM algorithm 337
 
-  11.1 Latent variable models 337
-  11.2 Mixture models 337
-  11.2.1 Mixtures of Gaussians 339
-  11.2.2 Mixture of multinoullis 340
-  11.2.3 Using mixture models for clustering 340
-  11.2.4 Mixtures of experts 342
-  11.3 Parameter estimation for mixture models 345
-  11.3.1 Unidentifiability 346
-  11.3.2 Computing a MAP estimate is non-convex 347
-  11.4 The EM algorithm 348
-  11.4.1 Basic idea 349
-  11.4.2 EM for GMMs 350
-  11.4.3 EM for mixture of experts 357
-  11.4.4 EM for DGMs with hidden variables 358
-  11.4.5 EM for the Student distribution * 359
-  11.4.6 EM for probit regression * 362
-  11.4.7 Theoretical basis for EM * 363
-  11.4.8 Online EM 365
-  11.4.9 Other EM variants * 367
-  11.5 Model selection for latent variable models 370
-  11.5.1 Model selection for probabilistic models 370
-  11.5.2 Model selection for non-probabilistic methods 370
-  11.6 Fitting models with missing data 372
-  xiv CONTENTS
-  11.6.1 EM for the MLE of an MVN with missing data 373
+ - 11.1 Latent variable models 337
+ - 11.2 Mixture models 337
+ - 11.2.1 Mixtures of Gaussians 339
+ - 11.2.2 Mixture of multinoullis 340
+ - 11.2.3 Using mixture models for clustering 340
+ - 11.2.4 Mixtures of experts 342
+ - 11.3 Parameter estimation for mixture models 345
+ - 11.3.1 Unidentifiability 346
+ - 11.3.2 Computing a MAP estimate is non-convex 347
+ - 11.4 The EM algorithm 348
+ - 11.4.1 Basic idea 349
+ - 11.4.2 EM for GMMs 350
+ - 11.4.3 EM for mixture of experts 357
+ - 11.4.4 EM for DGMs with hidden variables 358
+ - 11.4.5 EM for the Student distribution * 359
+ - 11.4.6 EM for probit regression * 362
+ - 11.4.7 Theoretical basis for EM * 363
+ - 11.4.8 Online EM 365
+ - 11.4.9 Other EM variants * 367
+ - 11.5 Model selection for latent variable models 370
+ - 11.5.1 Model selection for probabilistic models 370
+ - 11.5.2 Model selection for non-probabilistic methods 370
+ - 11.6 Fitting models with missing data 372
   
-12 Latent linear models 381
+  #### xiv CONTENTS
+ 
+ - 11.6.1 EM for the MLE of an MVN with missing data 373
+  
+### 12 Latent linear models 381
 
-  12.1 Factor analysis 381
-  12.1.1 FA is a low rank parameterization of an MVN 381
-  12.1.2 Inference of the latent factors 382
-  12.1.3 Unidentifiability 383
-  12.1.4 Mixtures of factor analysers 385
-  12.1.5 EM for factor analysis models 386
-  12.1.6 Fitting FA models with missing data 387
-  12.2 Principal components analysis (PCA) 387
-  12.2.1 Classical PCA: statement of the theorem 387
-  12.2.2 Proof * 389
-  12.2.3 Singular value decomposition (SVD) 392
-  12.2.4 Probabilistic PCA 395
-  12.2.5 EM algorithm for PCA 396
-  12.3 Choosing the number of latent dimensions 398
-  12.3.1 Model selection for FA/PPCA 398
-  12.3.2 Model selection for PCA 399
-  12.4 PCA for categorical data 402
-  12.5 PCA for paired and multi-view data 404
-  12.5.1 Supervised PCA (latent factor regression) 405
-  12.5.2 Partial least squares 406
-  12.5.3 Canonical correlation analysis 407
-  12.6 Independent Component Analysis (ICA) 407
-  12.6.1 Maximum likelihood estimation 410
-  12.6.2 The FastICA algorithm 411
-  12.6.3 Using EM 414
-  12.6.4 Other estimation principles * 415
+ - 12.1 Factor analysis 381
+ - 12.1.1 FA is a low rank parameterization of an MVN 381
+ - 12.1.2 Inference of the latent factors 382
+ - 12.1.3 Unidentifiability 383
+ - 12.1.4 Mixtures of factor analysers 385
+ - 12.1.5 EM for factor analysis models 386
+ - 12.1.6 Fitting FA models with missing data 387
+ - 12.2 Principal components analysis (PCA) 387
+ - 12.2.1 Classical PCA: statement of the theorem 387
+ - 12.2.2 Proof * 389
+ - 12.2.3 Singular value decomposition (SVD) 392
+ - 12.2.4 Probabilistic PCA 395
+ - 12.2.5 EM algorithm for PCA 396
+ - 12.3 Choosing the number of latent dimensions 398
+ - 12.3.1 Model selection for FA/PPCA 398
+ - 12.3.2 Model selection for PCA 399
+ - 12.4 PCA for categorical data 402
+ - 12.5 PCA for paired and multi-view data 404
+ - 12.5.1 Supervised PCA (latent factor regression) 405
+ - 12.5.2 Partial least squares 406
+ - 12.5.3 Canonical correlation analysis 407
+ - 12.6 Independent Component Analysis (ICA) 407
+ - 12.6.1 Maximum likelihood estimation 410
+ - 12.6.2 The FastICA algorithm 411
+ - 12.6.3 Using EM 414
+ - 12.6.4 Other estimation principles * 415
   
-13 Sparse linear models 421
+### 13 Sparse linear models 421
 
-  13.1 Introduction 421
-  13.2 Bayesian variable selection 422
-  13.2.1 The spike and slab model 424
-  13.2.2 From the Bernoulli-Gaussian model to 0 regularization 425
-  13.2.3 Algorithms 426
-  13.3 1 regularization: basics 429
-  13.3.1 Why does 1 regularization yield sparse solutions? 430
-  13.3.2 Optimality conditions for lasso 431
-  13.3.3 Comparison of least squares, lasso, ridge and subset selection 435
-  13.3.4 Regularization path 436
-  13.3.5 Model selection 439
-  13.3.6 Bayesian inference for linear models with Laplace priors 440
-  13.4 1 regularization: algorithms 441
-  13.4.1 Coordinate descent 441
-  CONTENTS xv
-  13.4.2 LARS and other homotopy methods 441
-  13.4.3 Proximal and gradient projection methods 442
-  13.4.4 EM for lasso 447
-  13.5 1 regularization: extensions 449
-  13.5.1 Group Lasso 449
-  13.5.2 Fused lasso 454
-  13.5.3 Elastic net (ridge and lasso combined) 455
-  13.6 Non-convex regularizers 457
-  13.6.1 Bridge regression 458
-  13.6.2 Hierarchical adaptive lasso 458
-  13.6.3 Other hierarchical priors 462
-  13.7 Automatic relevance determination (ARD)/sparse Bayesian learning (SBL) 463
-  13.7.1 ARD for linear regression 463
-  13.7.2 Whence sparsity? 465
-  13.7.3 Connection to MAP estimation 465
-  13.7.4 Algorithms for ARD * 466
-  13.7.5 ARD for logistic regression 468
-  13.8 Sparse coding * 468
-  13.8.1 Learning a sparse coding dictionary 469
-  13.8.2 Results of dictionary learning from image patches 470
-  13.8.3 Compressed sensing 472
-  13.8.4 Image inpainting and denoising 472
+ - 13.1 Introduction 421
+ - 13.2 Bayesian variable selection 422
+ - 13.2.1 The spike and slab model 424
+ - 13.2.2 From the Bernoulli-Gaussian model to 0 regularization 425
+ - 13.2.3 Algorithms 426
+ - 13.3 1 regularization: basics 429
+ - 13.3.1 Why does 1 regularization yield sparse solutions? 430
+ - 13.3.2 Optimality conditions for lasso 431
+ - 13.3.3 Comparison of least squares, lasso, ridge and subset selection 435
+ - 13.3.4 Regularization path 436
+ - 13.3.5 Model selection 439
+ - 13.3.6 Bayesian inference for linear models with Laplace priors 440
+ - 13.4 1 regularization: algorithms 441
+ - 13.4.1 Coordinate descent 441
   
-14 Kernels 479
+  #### CONTENTS xv
+  
+ - 13.4.2 LARS and other homotopy methods 441
+ - 13.4.3 Proximal and gradient projection methods 442
+ - 13.4.4 EM for lasso 447
+ - 13.5 1 regularization: extensions 449
+ - 13.5.1 Group Lasso 449
+ - 13.5.2 Fused lasso 454
+ - 13.5.3 Elastic net (ridge and lasso combined) 455
+ - 13.6 Non-convex regularizers 457
+ - 13.6.1 Bridge regression 458
+ - 13.6.2 Hierarchical adaptive lasso 458
+ - 13.6.3 Other hierarchical priors 462
+ - 13.7 Automatic relevance determination (ARD)/sparse Bayesian learning (SBL) 463
+ - 13.7.1 ARD for linear regression 463
+ - 13.7.2 Whence sparsity? 465
+ - 13.7.3 Connection to MAP estimation 465
+ - 13.7.4 Algorithms for ARD * 466
+ - 13.7.5 ARD for logistic regression 468
+ - 13.8 Sparse coding * 468
+ - 13.8.1 Learning a sparse coding dictionary 469
+ - 13.8.2 Results of dictionary learning from image patches 470
+ - 13.8.3 Compressed sensing 472
+ - 13.8.4 Image inpainting and denoising 472
+  
+### 14 Kernels 479
 
-  14.1 Introduction 479
-  14.2 Kernel functions 479
-  14.2.1 RBF kernels 480
-  14.2.2 Kernels for comparing documents 480
-  14.2.3 Mercer (positive definite) kernels 481
-  14.2.4 Linear kernels 482
-  14.2.5 Matern kernels 482
-  14.2.6 String kernels 483
-  14.2.7 Pyramid match kernels 484
-  14.2.8 Kernels derived from probabilistic generative models 485
-  14.3 Using kernels inside GLMs 486
-  14.3.1 Kernel machines 486
-  14.3.2 L1VMs, RVMs, and other sparse vector machines 487
-  14.4 The kernel trick 488
-  14.4.1 Kernelized nearest neighbor classification 489
-  14.4.2 Kernelized K-medoids clustering 489
-  14.4.3 Kernelized ridge regression 492
-  14.4.4 Kernel PCA 493
-  14.5 Support vector machines (SVMs) 496
-  14.5.1 SVMs for regression 497
-  14.5.2 SVMs for classification 498
-  xvi CONTENTS
-  14.5.3 Choosing C 504
-  14.5.4 Summary of key points 504
-  14.5.5 A probabilistic interpretation of SVMs 505
-  14.6 Comparison of discriminative kernel methods 505
-  14.7 Kernels for building generative models 507
-  14.7.1 Smoothing kernels 507
-  14.7.2 Kernel density estimation (KDE) 508
-  14.7.3 From KDE to KNN 509
-  14.7.4 Kernel regression 510
-  14.7.5 Locally weighted regression 512
+ - 14.1 Introduction 479
+ - 14.2 Kernel functions 479
+ - 14.2.1 RBF kernels 480
+ - 14.2.2 Kernels for comparing documents 480
+ - 14.2.3 Mercer (positive definite) kernels 481
+ - 14.2.4 Linear kernels 482
+ - 14.2.5 Matern kernels 482
+ - 14.2.6 String kernels 483
+ - 14.2.7 Pyramid match kernels 484
+ - 14.2.8 Kernels derived from probabilistic generative models 485
+ - 14.3 Using kernels inside GLMs 486
+ - 14.3.1 Kernel machines 486
+ - 14.3.2 L1VMs, RVMs, and other sparse vector machines 487
+ - 14.4 The kernel trick 488
+ - 14.4.1 Kernelized nearest neighbor classification 489
+ - 14.4.2 Kernelized K-medoids clustering 489
+ - 14.4.3 Kernelized ridge regression 492
+ - 14.4.4 Kernel PCA 493
+ - 14.5 Support vector machines (SVMs) 496
+ - 14.5.1 SVMs for regression 497
+ - 14.5.2 SVMs for classification 498
   
-15 Gaussian processes 515
+  #### xvi CONTENTS
+  
+ - 14.5.3 Choosing C 504
+ - 14.5.4 Summary of key points 504
+ - 14.5.5 A probabilistic interpretation of SVMs 505
+ - 14.6 Comparison of discriminative kernel methods 505
+ - 14.7 Kernels for building generative models 507
+ - 14.7.1 Smoothing kernels 507
+ - 14.7.2 Kernel density estimation (KDE) 508
+ - 14.7.3 From KDE to KNN 509
+ - 14.7.4 Kernel regression 510
+ - 14.7.5 Locally weighted regression 512
+  
+### 15 Gaussian processes 515
 
-  15.1 Introduction 515
-  15.2 GPs for regression 516
-  15.2.1 Predictions using noise-free observations 517
-  15.2.2 Predictions using noisy observations 518
-  15.2.3 Effect of the kernel parameters 519
-  15.2.4 Estimating the kernel parameters 521
-  15.2.5 Computational and numerical issues * 524
-  15.2.6 Semi-parametric GPs * 524
-  15.3 GPs meet GLMs 525
-  15.3.1 Binary classification 525
-  15.3.2 Multi-class classification 528
-  15.3.3 GPs for Poisson regression 531
-  15.4 Connection with other methods 532
-  15.4.1 Linear models compared to GPs 532
-  15.4.2 Linear smoothers compared to GPs 533
-  15.4.3 SVMs compared to GPs 534
-  15.4.4 L1VM and RVMs compared to GPs 534
-  15.4.5 Neural networks compared to GPs 535
-  15.4.6 Smoothing splines compared to GPs * 536
-  15.4.7 RKHS methods compared to GPs * 538
-  15.5 GP latent variable model 540
-  15.6 Approximation methods for large datasets 542
+ - 15.1 Introduction 515
+ - 15.2 GPs for regression 516
+ - 15.2.1 Predictions using noise-free observations 517
+ - 15.2.2 Predictions using noisy observations 518
+ - 15.2.3 Effect of the kernel parameters 519
+ - 15.2.4 Estimating the kernel parameters 521
+ - 15.2.5 Computational and numerical issues * 524
+ - 15.2.6 Semi-parametric GPs * 524
+ - 15.3 GPs meet GLMs 525
+ - 15.3.1 Binary classification 525
+ - 15.3.2 Multi-class classification 528
+ - 15.3.3 GPs for Poisson regression 531
+ - 15.4 Connection with other methods 532
+ - 15.4.1 Linear models compared to GPs 532
+ - 15.4.2 Linear smoothers compared to GPs 533
+ - 15.4.3 SVMs compared to GPs 534
+ - 15.4.4 L1VM and RVMs compared to GPs 534
+ - 15.4.5 Neural networks compared to GPs 535
+ - 15.4.6 Smoothing splines compared to GPs * 536
+ - 15.4.7 RKHS methods compared to GPs * 538
+ - 15.5 GP latent variable model 540
+ - 15.6 Approximation methods for large datasets 542
   
-16 Adaptive basis function models 543
+### 16 Adaptive basis function models 543
 
-  16.1 Introduction 543
-  16.2 Classification and regression trees (CART) 544
-  16.2.1 Basics 544
-  16.2.2 Growing a tree 545
-  16.2.3 Pruning a tree 549
-  16.2.4 Pros and cons of trees 550
-  16.2.5 Random forests 550
-  16.2.6 CART compared to hierarchical mixture of experts * 551
-  16.3 Generalized additive models 552
-  CONTENTS xvii
-  16.3.1 Backfitting 552
-  16.3.2 Computational efficiency 553
-  16.3.3 Multivariate adaptive regression splines (MARS) 553
-  16.4 Boosting 554
-  16.4.1 Forward stagewise additive modeling 555
-  16.4.2 L2boosting 557
-  16.4.3 AdaBoost 558
-  16.4.4 LogitBoost 559
-  16.4.5 Boosting as functional gradient descent 560
-  16.4.6 Sparse boosting 561
-  16.4.7 Multivariate adaptive regression trees (MART) 562
-  16.4.8 Why does boosting work so well? 562
-  16.4.9 A Bayesian view 563
-  16.5 Feedforward neural networks (multilayer perceptrons) 563
-  16.5.1 Convolutional neural networks 564
-  16.5.2 Other kinds of neural networks 568
-  16.5.3 A brief history of the field 568
-  16.5.4 The backpropagation algorithm 569
-  16.5.5 Identifiability 572
-  16.5.6 Regularization 572
-  16.5.7 Bayesian inference * 576
-  16.6 Ensemble learning 580
-  16.6.1 Stacking 580
-  16.6.2 Error-correcting output codes 581
-  16.6.3 Ensemble learning is not equivalent to Bayes model averaging 581
-  16.7 Experimental comparison 582
-  16.7.1 Low-dimensional features 582
-  16.7.2 High-dimensional features 583
-  16.8 Interpreting black-box models 585
+ - 16.1 Introduction 543
+ - 16.2 Classification and regression trees (CART) 544
+ - 16.2.1 Basics 544
+ - 16.2.2 Growing a tree 545
+ - 16.2.3 Pruning a tree 549
+ - 16.2.4 Pros and cons of trees 550
+ - 16.2.5 Random forests 550
+ - 16.2.6 CART compared to hierarchical mixture of experts * 551
+ - 16.3 Generalized additive models 552
   
-17 Markov and hidden Markov models 589
+  #### CONTENTS xvii
+  
+ - 16.3.1 Backfitting 552
+ - 16.3.2 Computational efficiency 553
+ - 16.3.3 Multivariate adaptive regression splines (MARS) 553
+ - 16.4 Boosting 554
+ - 16.4.1 Forward stagewise additive modeling 555
+ - 16.4.2 L2boosting 557
+ - 16.4.3 AdaBoost 558
+ - 16.4.4 LogitBoost 559
+ - 16.4.5 Boosting as functional gradient descent 560
+ - 16.4.6 Sparse boosting 561
+ - 16.4.7 Multivariate adaptive regression trees (MART) 562
+ - 16.4.8 Why does boosting work so well? 562
+ - 16.4.9 A Bayesian view 563
+ - 16.5 Feedforward neural networks (multilayer perceptrons) 563
+ - 16.5.1 Convolutional neural networks 564
+ - 16.5.2 Other kinds of neural networks 568
+ - 16.5.3 A brief history of the field 568
+ - 16.5.4 The backpropagation algorithm 569
+ - 16.5.5 Identifiability 572
+ - 16.5.6 Regularization 572
+ - 16.5.7 Bayesian inference * 576
+ - 16.6 Ensemble learning 580
+ - 16.6.1 Stacking 580
+ - 16.6.2 Error-correcting output codes 581
+ - 16.6.3 Ensemble learning is not equivalent to Bayes model averaging 581
+ - 16.7 Experimental comparison 582
+ - 16.7.1 Low-dimensional features 582
+ - 16.7.2 High-dimensional features 583
+ - 16.8 Interpreting black-box models 585
+  
+### 17 Markov and hidden Markov models 589
 
   17.1 Introduction 589
   17.2 Markov models 589
