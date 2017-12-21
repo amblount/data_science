@@ -8,42 +8,27 @@ Contents
 Preface xxvii
 
 1 Introduction 1
-
-  1.1 Machine learning: what and why? 1
   
-  1.1.1 Types of machine learning 2
-  
-  1.2 Supervised learning 3
-  
-  1.2.1 Classification 3
-  
-  1.2.2 Regression 8
-  
-  1.3 Unsupervised learning 9
-  
-  1.3.1 Discovering clusters 10
-  
-  1.3.2 Discovering latent factors 11
-  
-  1.3.3 Discovering graph structure 13
-  
-  1.3.4 Matrix completion 14
-  
-  1.4 Some basic concepts in machine learning 16
-  
-  1.4.1 Parametric vs non-parametric models 16
-  
-  1.4.2 A simple non-parametric classifier: K-nearest neighbors 16
-  
-  1.4.3 The curse of dimensionality 18
-  
-  1.4.4 Parametric models for classification and regression 19
-  1.4.5 Linear regression 19
-  1.4.6 Logistic regression 21
-  1.4.7 Overfitting 22
-  1.4.8 Model selection 22
-  1.4.9 No free lunch theorem 24
-
+ - 1.1 Machine learning: what and why? 1
+ - 1.1.1 Types of machine learning 2
+ - 1.2 Supervised learning 3
+ - 1.2.1 Classification 3
+ - 1.2.2 Regression 8
+ - 1.3 Unsupervised learning 9
+ - 1.3.1 Discovering clusters 10
+ - 1.3.2 Discovering latent factors 11
+ - 1.3.3 Discovering graph structure 13
+ - 1.3.4 Matrix completion 14
+ - 1.4 Some basic concepts in machine learning 16
+ - 1.4.1 Parametric vs non-parametric models 16
+ - 1.4.2 A simple non-parametric classifier: K-nearest neighbors 16
+ - 1.4.3 The curse of dimensionality 18
+ - 1.4.4 Parametric models for classification and regression 19
+ - 1.4.5 Linear regression 19
+ - 1.4.6 Logistic regression 21
+ - 1.4.7 Overfitting 22
+ - 1.4.8 Model selection 22
+ - 1.4.9 No free lunch theorem 24
 
 2 Probability 27
 
