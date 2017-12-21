@@ -3,6 +3,9 @@
 
 Follow the journey as I blog my way through understanding the content in this book.
 
+#### Introduction
+With the every increasing amounts of data in the electronics form, the need for automated mehtods for data analysis continues to grow. The goal of machine learning is to develop methods that can autoomatically detect patterns in data, and then to use the uncovered patterns to predeictfuture data or other outcomes of interest. Machine learning is thus closely related to the fields of statistics and data mining, but differs slightly in terms of its emphasis and temrinology. This book provides a detailed introduction to the field, and includes  worked examples drawn from application domains such as molecular biology, text processing, computer vision, and robotics.
+
 ## Contents
 
 Preface xxvii
