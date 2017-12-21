@@ -1,9 +1,9 @@
 # Machine Learning A Probabilistic Perspective
-Kevin P. Murphy
+##### Kevin P. Murphy
 
 Follow the journey as I blog my way through understanding the content in this book.
 
-Contents
+## Contents
 
 Preface xxvii
 
@@ -518,364 +518,378 @@ Preface xxvii
   
 ### 17 Markov and hidden Markov models 589
 
-  17.1 Introduction 589
-  17.2 Markov models 589
-  17.2.1 Transition matrix 589
-  17.2.2 Application: Language modeling 591
-  17.2.3 Stationary distribution of a Markov chain * 596
-  17.2.4 Application: Google’s PageRank algorithm for web page ranking * 600
-  17.3 Hidden Markov models 603
-  17.3.1 Applications of HMMs 604
-  17.4 Inference in HMMs 606
-  17.4.1 Types of inference problems for temporal models 606
-  17.4.2 The forwards algorithm 609
-  17.4.3 The forwards-backwards algorithm 610
-  17.4.4 The Viterbi algorithm 612
-  17.4.5 Forwards filtering, backwards sampling 616
-  xviii CONTENTS
-  17.5 Learning for HMMs 617
-  17.5.1 Training with fully observed data 617
-  17.5.2 EM for HMMs (the Baum-Welch algorithm) 618
-  17.5.3 Bayesian methods for “fitting” HMMs * 620
-  17.5.4 Discriminative training 620
-  17.5.5 Model selection 621
-  17.6 Generalizations of HMMs 621
-  17.6.1 Variable duration (semi-Markov) HMMs 622
-  17.6.2 Hierarchical HMMs 624
-  17.6.3 Input-output HMMs 625
-  17.6.4 Auto-regressive and buried HMMs 626
-  17.6.5 Factorial HMM 627
-  17.6.6 Coupled HMM and the influence model 628
-  17.6.7 Dynamic Bayesian networks (DBNs) 628
+ - 17.1 Introduction 589
+ - 17.2 Markov models 589
+ - 17.2.1 Transition matrix 589
+ - 17.2.2 Application: Language modeling 591
+ - 17.2.3 Stationary distribution of a Markov chain * 596
+ - 17.2.4 Application: Google’s PageRank algorithm for web page ranking * 600
+ - 17.3 Hidden Markov models 603
+ - 17.3.1 Applications of HMMs 604
+ - 17.4 Inference in HMMs 606
+ - 17.4.1 Types of inference problems for temporal models 606
+ - 17.4.2 The forwards algorithm 609
+ - 17.4.3 The forwards-backwards algorithm 610
+ - 17.4.4 The Viterbi algorithm 612
+ - 17.4.5 Forwards filtering, backwards sampling 616
+ 
+ #### xviii CONTENTS
   
-18 State space models 631
-
-  18.1 Introduction 631
-  18.2 Applications of SSMs 632
-  18.2.1 SSMs for object tracking 632
-  18.2.2 Robotic SLAM 633
-  18.2.3 Online parameter learning using recursive least squares 636
-  18.2.4 SSM for time series forecasting * 637
-  18.3 Inference in LG-SSM 640
-  18.3.1 The Kalman filtering algorithm 640
-  18.3.2 The Kalman smoothing algorithm 643
-  18.4 Learning for LG-SSM 646
-  18.4.1 Identifiability and numerical stability 646
-  18.4.2 Training with fully observed data 647
-  18.4.3 EM for LG-SSM 647
-  18.4.4 Subspace methods 647
-  18.4.5 Bayesian methods for “fitting” LG-SSMs 647
-  18.5 Approximate online inference for non-linear, non-Gaussian SSMs 647
-  18.5.1 Extended Kalman filter (EKF) 648
-  18.5.2 Unscented Kalman filter (UKF) 650
-  18.5.3 Assumed density filtering (ADF) 652
-  18.6 Hybrid discrete/continuous SSMs 655
-  18.6.1 Inference 656
-  18.6.2 Application: data association and multi-target tracking 658
-  18.6.3 Application: fault diagnosis 659
-  18.6.4 Application: econometric forecasting 660
+ - 17.5 Learning for HMMs 617
+ - 17.5.1 Training with fully observed data 617
+ - 17.5.2 EM for HMMs (the Baum-Welch algorithm) 618
+ - 17.5.3 Bayesian methods for “fitting” HMMs * 620
+ - 17.5.4 Discriminative training 620
+ - 17.5.5 Model selection 621
+ - 17.6 Generalizations of HMMs 621
+ - 17.6.1 Variable duration (semi-Markov) HMMs 622
+ - 17.6.2 Hierarchical HMMs 624
+ - 17.6.3 Input-output HMMs 625
+ - 17.6.4 Auto-regressive and buried HMMs 626
+ - 17.6.5 Factorial HMM 627
+ - 17.6.6 Coupled HMM and the influence model 628
+ - 17.6.7 Dynamic Bayesian networks (DBNs) 628
   
-19 Undirected graphical models (Markov random fields) 661
+### 18 State space models 631
 
-  19.1 Introduction 661
-  19.2 Conditional independence properties of UGMs 661
-  19.2.1 Key properties 661
-  CONTENTS xix
-  19.2.2 An undirected alternative to d-separation 663
-  19.2.3 Comparing directed and undirected graphical models 664
-  19.3 Parameterization of MRFs 665
-  19.3.1 The Hammersley-Clifford theorem 665
-  19.3.2 Representing potential functions 667
-  19.4 Examples of MRFs 668
-  19.4.1 Ising model 668
-  19.4.2 Hopfield networks 669
-  19.4.3 Potts model 671
-  19.4.4 Gaussian MRFs 672
-  19.4.5 Markov logic networks * 674
-  19.5 Learning 676
-  19.5.1 Training maxent models using gradient methods 676
-  19.5.2 Training partially observed maxent models 677
-  19.5.3 Approximate methods for computing the MLEs of MRFs 678
-  19.5.4 Pseudo likelihood 678
-  19.5.5 Stochastic maximum likelihood 679
-  19.5.6 Feature induction for maxent models * 680
-  19.5.7 Iterative proportional fitting (IPF) * 681
-  19.6 Conditional random fields (CRFs) 684
-  19.6.1 Chain-structured CRFs, MEMMs and the label-bias problem 684
-  19.6.2 Applications of CRFs 686
-  19.6.3 CRF training 692
-  19.7 Structural SVMs 693
-  19.7.1 SSVMs: a probabilistic view 693
-  19.7.2 SSVMs: a non-probabilistic view 695
-  19.7.3 Cutting plane methods for fitting SSVMs 698
-  19.7.4 Online algorithms for fitting SSVMs 700
-  19.7.5 Latent structural SVMs 701
+ - 18.1 Introduction 631
+ - 18.2 Applications of SSMs 632
+ - 18.2.1 SSMs for object tracking 632
+ - 18.2.2 Robotic SLAM 633
+ - 18.2.3 Online parameter learning using recursive least squares 636
+ - 18.2.4 SSM for time series forecasting * 637
+ - 18.3 Inference in LG-SSM 640
+ - 18.3.1 The Kalman filtering algorithm 640
+ - 18.3.2 The Kalman smoothing algorithm 643
+ - 18.4 Learning for LG-SSM 646
+ - 18.4.1 Identifiability and numerical stability 646
+ - 18.4.2 Training with fully observed data 647
+ - 18.4.3 EM for LG-SSM 647
+ - 18.4.4 Subspace methods 647
+ - 18.4.5 Bayesian methods for “fitting” LG-SSMs 647
+ - 18.5 Approximate online inference for non-linear, non-Gaussian SSMs 647
+ - 18.5.1 Extended Kalman filter (EKF) 648
+ - 18.5.2 Unscented Kalman filter (UKF) 650
+ - 18.5.3 Assumed density filtering (ADF) 652
+ - 18.6 Hybrid discrete/continuous SSMs 655
+ - 18.6.1 Inference 656
+ - 18.6.2 Application: data association and multi-target tracking 658
+ - 18.6.3 Application: fault diagnosis 659
+ - 18.6.4 Application: econometric forecasting 660
   
-20 Exact inference for graphical models 707
+### 19 Undirected graphical models (Markov random fields) 661
 
-  20.1 Introduction 707
-  20.2 Belief propagation for trees 707
-  20.2.1 Serial protocol 707
-  20.2.2 Parallel protocol 709
-  20.2.3 Gaussian BP * 710
-  20.2.4 Other BP variants * 712
-  20.3 The variable elimination algorithm 714
-  20.3.1 The generalized distributive law * 717
-  20.3.2 Computational complexity of VE 717
-  20.3.3 A weakness of VE 720
-  20.4 The junction tree algorithm * 720
-  20.4.1 Creating a junction tree 720
-  20.4.2 Message passing on a junction tree 722
-  20.4.3 Computational complexity of JTA 725
-  xx CONTENTS
-  20.4.4 JTA generalizations * 726
-  20.5 Computational intractability of exact inference in the worst case 726
-  20.5.1 Approximate inference 727
+ - 19.1 Introduction 661
+ - 19.2 Conditional independence properties of UGMs 661
+ - 19.2.1 Key properties 661
   
-21 Variational inference 731
-
-  21.1 Introduction 731
-  21.2 Variational inference 732
-  21.2.1 Alternative interpretations of the variational objective 733
-  21.2.2 Forward or reverse KL? * 733
-  21.3 The mean field method 735
-  21.3.1 Derivation of the mean field update equations 736
-  21.3.2 Example: mean field for the Ising model 737
-  21.4 Structured mean field * 739
-  21.4.1 Example: factorial HMM 740
-  21.5 Variational Bayes 742
-  21.5.1 Example: VB for a univariate Gaussian 742
-  21.5.2 Example: VB for linear regression 746
-  21.6 Variational Bayes EM 749
-  21.6.1 Example: VBEM for mixtures of Gaussians * 750
-  21.7 Variational message passing and VIBES 756
-  21.8 Local variational bounds * 756
-  21.8.1 Motivating applications 756
-  21.8.2 Bohning’s quadratic bound to the log-sum-exp function 758
-  21.8.3 Bounds for the sigmoid function 760
-  21.8.4 Other bounds and approximations to the log-sum-exp function * 762
-  21.8.5 Variational inference based on upper bounds 763
+  #### CONTENTS xix
   
-22 More variational inference 767
-
-22.1 Introduction 767
-  22.2 Loopy belief propagation: algorithmic issues 767
-  22.2.1 A brief history 767
-  22.2.2 LBP on pairwise models 768
-  22.2.3 LBP on a factor graph 769
-  22.2.4 Convergence 771
-  22.2.5 Accuracy of LBP 774
-  22.2.6 Other speedup tricks for LBP * 775
-  22.3 Loopy belief propagation: theoretical issues * 776
-  22.3.1 UGMs represented in exponential family form 776
-  22.3.2 The marginal polytope 777
-  22.3.3 Exact inference as a variational optimization problem 778
-  22.3.4 Mean field as a variational optimization problem 779
-  22.3.5 LBP as a variational optimization problem 779
-  22.3.6 Loopy BP vs mean field 783
-  22.4 Extensions of belief propagation * 783
-  22.4.1 Generalized belief propagation 783
-  CONTENTS xxi
-  22.4.2 Convex belief propagation 785
-  22.5 Expectation propagation 787
-  22.5.1 EP as a variational inference problem 788
-  22.5.2 Optimizing the EP objective using moment matching 789
-  22.5.3 EP for the clutter problem 791
-  22.5.4 LBP is a special case of EP 792
-  22.5.5 Ranking players using TrueSkill 793
-  22.5.6 Other applications of EP 799
-  22.6 MAP state estimation 799
-  22.6.1 Linear programming relaxation 799
-  22.6.2 Max-product belief propagation 800
-  22.6.3 Graphcuts 801
-  22.6.4 Experimental comparison of graphcuts and BP 804
-  22.6.5 Dual decomposition 806
+ - 19.2.2 An undirected alternative to d-separation 663
+ - 19.2.3 Comparing directed and undirected graphical models 664
+ - 19.3 Parameterization of MRFs 665
+ - 19.3.1 The Hammersley-Clifford theorem 665
+ - 19.3.2 Representing potential functions 667
+ - 19.4 Examples of MRFs 668
+ - 19.4.1 Ising model 668
+ - 19.4.2 Hopfield networks 669
+ - 19.4.3 Potts model 671
+ - 19.4.4 Gaussian MRFs 672
+ - 19.4.5 Markov logic networks * 674
+ - 19.5 Learning 676
+ - 19.5.1 Training maxent models using gradient methods 676
+ - 19.5.2 Training partially observed maxent models 677
+ - 19.5.3 Approximate methods for computing the MLEs of MRFs 678
+ - 19.5.4 Pseudo likelihood 678
+ - 19.5.5 Stochastic maximum likelihood 679
+ - 19.5.6 Feature induction for maxent models * 680
+ - 19.5.7 Iterative proportional fitting (IPF) * 681
+ - 19.6 Conditional random fields (CRFs) 684
+ - 19.6.1 Chain-structured CRFs, MEMMs and the label-bias problem 684
+ - 19.6.2 Applications of CRFs 686
+ - 19.6.3 CRF training 692
+ - 19.7 Structural SVMs 693
+ - 19.7.1 SSVMs: a probabilistic view 693
+ - 19.7.2 SSVMs: a non-probabilistic view 695
+ - 19.7.3 Cutting plane methods for fitting SSVMs 698
+ - 19.7.4 Online algorithms for fitting SSVMs 700
+ - 19.7.5 Latent structural SVMs 701
   
-23 Monte Carlo inference 815
+### 20 Exact inference for graphical models 707
 
-  23.1 Introduction 815
-  23.2 Sampling from standard distributions 815
-  23.2.1 Using the cdf 815
-  23.2.2 Sampling from a Gaussian (Box-Muller method) 817
-  23.3 Rejection sampling 817
-  23.3.1 Basic idea 817
-  23.3.2 Example 818
-  23.3.3 Application to Bayesian statistics 819
-  23.3.4 Adaptive rejection sampling 819
-  23.3.5 Rejection sampling in high dimensions 820
-  23.4 Importance sampling 820
-  23.4.1 Basic idea 820
-  23.4.2 Handling unnormalized distributions 821
-  23.4.3 Importance sampling for a DGM: likelihood weighting 822
-  23.4.4 Sampling importance resampling (SIR) 822
-  23.5 Particle filtering 823
-  23.5.1 Sequential importance sampling 824
-  23.5.2 The degeneracy problem 825
-  23.5.3 The resampling step 825
-  23.5.4 The proposal distribution 827
-  23.5.5 Application: robot localization 828
-  23.5.6 Application: visual object tracking 828
-  23.5.7 Application: time series forecasting 831
-  23.6 Rao-Blackwellised particle filtering (RBPF) 831
-  23.6.1 RBPF for switching LG-SSMs 831
-  23.6.2 Application: tracking a maneuvering target 832
-  23.6.3 Application: Fast SLAM 834
+ - 20.1 Introduction 707
+ - 20.2 Belief propagation for trees 707
+ - 20.2.1 Serial protocol 707
+ - 20.2.2 Parallel protocol 709
+ - 20.2.3 Gaussian BP * 710
+ - 20.2.4 Other BP variants * 712
+ - 20.3 The variable elimination algorithm 714
+ - 20.3.1 The generalized distributive law * 717
+ - 20.3.2 Computational complexity of VE 717
+ - 20.3.3 A weakness of VE 720
+ - 20.4 The junction tree algorithm * 720
+ - 20.4.1 Creating a junction tree 720
+ - 20.4.2 Message passing on a junction tree 722
+ - 20.4.3 Computational complexity of JTA 725
   
-24 Markov chain Monte Carlo (MCMC) inference 837
-
-xxii CONTENTS
-  24.1 Introduction 837
-  24.2 Gibbs sampling 838
-  24.2.1 Basic idea 838
-  24.2.2 Example: Gibbs sampling for the Ising model 838
-  24.2.3 Example: Gibbs sampling for inferring the parameters of a GMM 840
-  24.2.4 Collapsed Gibbs sampling * 841
-  24.2.5 Gibbs sampling for hierarchical GLMs 844
-  24.2.6 BUGS and JAGS 846
-  24.2.7 The Imputation Posterior (IP) algorithm 847
-  24.2.8 Blocking Gibbs sampling 847
-  24.3 Metropolis Hastings algorithm 848
-  24.3.1 Basic idea 848
-  24.3.2 Gibbs sampling is a special case of MH 849
-  24.3.3 Proposal distributions 850
-  24.3.4 Adaptive MCMC 853
-  24.3.5 Initialization and mode hopping 854
-  24.3.6 Why MH works * 854
-  24.3.7 Reversible jump (trans-dimensional) MCMC * 855
-  24.4 Speed and accuracy of MCMC 856
-  24.4.1 The burn-in phase 856
-  24.4.2 Mixing rates of Markov chains * 857
-  24.4.3 Practical convergence diagnostics 858
-  24.4.4 Accuracy of MCMC 860
-  24.4.5 How many chains? 862
-  24.5 Auxiliary variable MCMC * 863
-  24.5.1 Auxiliary variable sampling for logistic regression 863
-  24.5.2 Slice sampling 864
-  24.5.3 Swendsen Wang 866
-  24.5.4 Hybrid/Hamiltonian MCMC * 868
-  24.6 Annealing methods 868
-  24.6.1 Simulated annealing 869
-  24.6.2 Annealed importance sampling 871
-  24.6.3 Parallel tempering 871
-  24.7 Approximating the marginal likelihood 872
-  24.7.1 The candidate method 872
-  24.7.2 Harmonic mean estimate 872
-  24.7.3 Annealed importance sampling 873
+  #### xx CONTENTS
   
-25 Clustering 875
-
-  25.1 Introduction 875
-  25.1.1 Measuring (dis)similarity 875
-  25.1.2 Evaluating the output of clustering methods * 876
-  25.2 Dirichlet process mixture models 879
-  25.2.1 From finite to infinite mixture models 879
-  25.2.2 The Dirichlet process 882
-  CONTENTS xxiii
-  25.2.3 Applying Dirichlet processes to mixture modeling 885
-  25.2.4 Fitting a DP mixture model 886
-  25.3 Affinity propagation 887
-  25.4 Spectral clustering 890
-  25.4.1 Graph Laplacian 891
-  25.4.2 Normalized graph Laplacian 892
-  25.4.3 Example 893
-  25.5 Hierarchical clustering 893
-  25.5.1 Agglomerative clustering 895
-  25.5.2 Divisive clustering 898
-  25.5.3 Choosing the number of clusters 899
-  25.5.4 Bayesian hierarchical clustering 899
-  25.6 Clustering datapoints and features 901
-  25.6.1 Biclustering 903
-  25.6.2 Multi-view clustering 903
+ - 20.4.4 JTA generalizations * 726
+ - 20.5 Computational intractability of exact inference in the worst case 726
+ - 20.5.1 Approximate inference 727
   
-26 Graphical model structure learning 907
+### 21 Variational inference 731
 
-  26.1 Introduction 907
-  26.2 Structure learning for knowledge discovery 908
-  26.2.1 Relevance networks 908
-  26.2.2 Dependency networks 909
-  26.3 Learning tree structures 910
-  26.3.1 Directed or undirected tree? 911
-  26.3.2 Chow-Liu algorithm for finding the ML tree structure 912
-  26.3.3 Finding the MAP forest 912
-  26.3.4 Mixtures of trees 914
-  26.4 Learning DAG structures 914
-  26.4.1 Markov equivalence 914
-  26.4.2 Exact structural inference 916
-  26.4.3 Scaling up to larger graphs 920
-  26.5 Learning DAG structure with latent variables 922
-  26.5.1 Approximating the marginal likelihood when we have missing data 922
-  26.5.2 Structural EM 925
-  26.5.3 Discovering hidden variables 926
-  26.5.4 Case study: Google’s Rephil 928
-  26.5.5 Structural equation models * 929
-  26.6 Learning causal DAGs 931
-  26.6.1 Causal interpretation of DAGs 931
-  26.6.2 Using causal DAGs to resolve Simpson’s paradox 933
-  26.6.3 Learning causal DAG structures 935
-  26.7 Learning undirected Gaussian graphical models 938
-  26.7.1 MLE for a GGM 938
-  26.7.2 Graphical lasso 939
-  26.7.3 Bayesian inference for GGM structure * 941
-  26.7.4 Handling non-Gaussian data using copulas * 942
-  xxiv CONTENTS
-  26.8 Learning undirected discrete graphical models 942
-  26.8.1 Graphical lasso for MRFs/CRFs 942
-  26.8.2 Thin junction trees 944
+ - 21.1 Introduction 731
+ - 21.2 Variational inference 732
+ - 21.2.1 Alternative interpretations of the variational objective 733
+ - 21.2.2 Forward or reverse KL? * 733
+ - 21.3 The mean field method 735
+ - 21.3.1 Derivation of the mean field update equations 736
+ - 21.3.2 Example: mean field for the Ising model 737
+ - 21.4 Structured mean field * 739
+ - 21.4.1 Example: factorial HMM 740
+ - 21.5 Variational Bayes 742
+ - 21.5.1 Example: VB for a univariate Gaussian 742
+ - 21.5.2 Example: VB for linear regression 746
+ - 21.6 Variational Bayes EM 749
+ - 21.6.1 Example: VBEM for mixtures of Gaussians * 750
+ - 21.7 Variational message passing and VIBES 756
+ - 21.8 Local variational bounds * 756
+ - 21.8.1 Motivating applications 756
+ - 21.8.2 Bohning’s quadratic bound to the log-sum-exp function 758
+ - 21.8.3 Bounds for the sigmoid function 760
+ - 21.8.4 Other bounds and approximations to the log-sum-exp function * 762
+ - 21.8.5 Variational inference based on upper bounds 763
   
-27 Latent variable models for discrete data 945
+### 22 More variational inference 767
 
-  27.1 Introduction 945
-  27.2 Distributed state LVMs for discrete data 946
-  27.2.1 Mixture models 946
-  27.2.2 Exponential family PCA 947
-  27.2.3 LDA and mPCA 948
-  27.2.4 GaP model and non-negative matrix factorization 949
-  27.3 Latent Dirichlet allocation (LDA) 950
-  27.3.1 Basics 950
-  27.3.2 Unsupervised discovery of topics 953
-  27.3.3 Quantitatively evaluating LDA as a language model 953
-  27.3.4 Fitting using (collapsed) Gibbs sampling 955
-  27.3.5 Example 956
-  27.3.6 Fitting using batch variational inference 957
-  27.3.7 Fitting using online variational inference 959
-  27.3.8 Determining the number of topics 960
-  27.4 Extensions of LDA 961
-  27.4.1 Correlated topic model 961
-  27.4.2 Dynamic topic model 962
-  27.4.3 LDA-HMM 963
-  27.4.4 Supervised LDA 967
-  27.5 LVMs for graph-structured data 970
-  27.5.1 Stochastic block model 971
-  27.5.2 Mixed membership stochastic block model 973
-  27.5.3 Relational topic model 974
-  27.6 LVMs for relational data 975
-  27.6.1 Infinite relational model 976
-  27.6.2 Probabilistic matrix factorization for collaborative filtering 979
-  27.7 Restricted Boltzmann machines (RBMs) 983
-  27.7.1 Varieties of RBMs 985
-  27.7.2 Learning RBMs 987
-  27.7.3 Applications of RBMs 991
+ - 22.1 Introduction 767
+ - 22.2 Loopy belief propagation: algorithmic issues 767
+ - 22.2.1 A brief history 767
+ - 22.2.2 LBP on pairwise models 768
+ - 22.2.3 LBP on a factor graph 769
+ - 22.2.4 Convergence 771
+ - 22.2.5 Accuracy of LBP 774
+ - 22.2.6 Other speedup tricks for LBP * 775
+ - 22.3 Loopy belief propagation: theoretical issues * 776
+ - 22.3.1 UGMs represented in exponential family form 776
+ - 22.3.2 The marginal polytope 777
+ - 22.3.3 Exact inference as a variational optimization problem 778
+ - 22.3.4 Mean field as a variational optimization problem 779
+ - 22.3.5 LBP as a variational optimization problem 779
+ - 22.3.6 Loopy BP vs mean field 783
+ - 22.4 Extensions of belief propagation * 783
+ - 22.4.1 Generalized belief propagation 783
   
-28 Deep learning 995
+  #### CONTENTS xxi
+  
+ - 22.4.2 Convex belief propagation 785
+ - 22.5 Expectation propagation 787
+ - 22.5.1 EP as a variational inference problem 788
+ - 22.5.2 Optimizing the EP objective using moment matching 789
+ - 22.5.3 EP for the clutter problem 791
+ - 22.5.4 LBP is a special case of EP 792
+ - 22.5.5 Ranking players using TrueSkill 793
+ - 22.5.6 Other applications of EP 799
+ - 22.6 MAP state estimation 799
+ - 22.6.1 Linear programming relaxation 799
+ - 22.6.2 Max-product belief propagation 800
+ - 22.6.3 Graphcuts 801
+ - 22.6.4 Experimental comparison of graphcuts and BP 804
+ - 22.6.5 Dual decomposition 806
+  
+### 23 Monte Carlo inference 815
 
-  28.1 Introduction 995
-  28.2 Deep generative models 995
-  28.2.1 Deep directed networks 996
-  28.2.2 Deep Boltzmann machines 996
-  28.2.3 Deep belief networks 997
-  28.2.4 Greedy layer-wise learning of DBNs 998
-  28.3 Deep neural networks 999
-  CONTENTS xxv
-  28.3.1 Deep multi-layer perceptrons 999
-  28.3.2 Deep auto-encoders 1000
-  28.3.3 Stacked denoising auto-encoders 1001
-  28.4 Applications of deep networks 1001
-  28.4.1 Handwritten digit classification using DBNs 1001
-  28.4.2 Data visualization and feature discovery using deep auto-encoders 1002
-  28.4.3 Information retrieval using deep auto-encoders (semantic hashing) 1003
-  28.4.4 Learning audio features using 1d convolutional DBNs 1004
-  28.4.5 Learning image features using 2d convolutional DBNs 1005
-  28.5 Discussion 1005
+ - 23.1 Introduction 815
+ - 23.2 Sampling from standard distributions 815
+ - 23.2.1 Using the cdf 815
+ - 23.2.2 Sampling from a Gaussian (Box-Muller method) 817
+ - 23.3 Rejection sampling 817
+ - 23.3.1 Basic idea 817
+ - 23.3.2 Example 818
+ - 23.3.3 Application to Bayesian statistics 819
+ - 23.3.4 Adaptive rejection sampling 819
+ - 23.3.5 Rejection sampling in high dimensions 820
+ - 23.4 Importance sampling 820
+ - 23.4.1 Basic idea 820
+ - 23.4.2 Handling unnormalized distributions 821
+ - 23.4.3 Importance sampling for a DGM: likelihood weighting 822
+ - 23.4.4 Sampling importance resampling (SIR) 822
+ - 23.5 Particle filtering 823
+ - 23.5.1 Sequential importance sampling 824
+ - 23.5.2 The degeneracy problem 825
+ - 23.5.3 The resampling step 825
+ - 23.5.4 The proposal distribution 827
+ - 23.5.5 Application: robot localization 828
+ - 23.5.6 Application: visual object tracking 828
+ - 23.5.7 Application: time series forecasting 831
+ - 23.6 Rao-Blackwellised particle filtering (RBPF) 831
+ - 23.6.1 RBPF for switching LG-SSMs 831
+ - 23.6.2 Application: tracking a maneuvering target 832
+ - 23.6.3 Application: Fast SLAM 834
+  
+### 24 Markov chain Monte Carlo (MCMC) inference 837
+
+#### xxii CONTENTS
+ - 24.1 Introduction 837
+ - 24.2 Gibbs sampling 838
+ - 24.2.1 Basic idea 838
+ - 24.2.2 Example: Gibbs sampling for the Ising model 838
+ - 24.2.3 Example: Gibbs sampling for inferring the parameters of a GMM 840
+ - 24.2.4 Collapsed Gibbs sampling * 841
+ - 24.2.5 Gibbs sampling for hierarchical GLMs 844
+ - 24.2.6 BUGS and JAGS 846
+ - 24.2.7 The Imputation Posterior (IP) algorithm 847
+ - 24.2.8 Blocking Gibbs sampling 847
+ - 24.3 Metropolis Hastings algorithm 848
+ - 24.3.1 Basic idea 848
+ - 24.3.2 Gibbs sampling is a special case of MH 849
+ - 24.3.3 Proposal distributions 850
+ - 24.3.4 Adaptive MCMC 853
+ - 24.3.5 Initialization and mode hopping 854
+ - 24.3.6 Why MH works * 854
+ - 24.3.7 Reversible jump (trans-dimensional) MCMC * 855
+ - 24.4 Speed and accuracy of MCMC 856
+ - 24.4.1 The burn-in phase 856
+ - 24.4.2 Mixing rates of Markov chains * 857
+ - 24.4.3 Practical convergence diagnostics 858
+ - 24.4.4 Accuracy of MCMC 860
+ - 24.4.5 How many chains? 862
+ - 24.5 Auxiliary variable MCMC * 863
+ - 24.5.1 Auxiliary variable sampling for logistic regression 863
+ - 24.5.2 Slice sampling 864
+ - 24.5.3 Swendsen Wang 866
+ - 24.5.4 Hybrid/Hamiltonian MCMC * 868
+ - 24.6 Annealing methods 868
+ - 24.6.1 Simulated annealing 869
+ - 24.6.2 Annealed importance sampling 871
+ - 24.6.3 Parallel tempering 871
+ - 24.7 Approximating the marginal likelihood 872
+ - 24.7.1 The candidate method 872
+ - 24.7.2 Harmonic mean estimate 872
+ - 24.7.3 Annealed importance sampling 873
+  
+### 25 Clustering 875
+
+ - 25.1 Introduction 875
+ - 25.1.1 Measuring (dis)similarity 875
+ - 25.1.2 Evaluating the output of clustering methods * 876
+ - 25.2 Dirichlet process mixture models 879
+ - 25.2.1 From finite to infinite mixture models 879
+ - 25.2.2 The Dirichlet process 882
+  
+  #### CONTENTS xxiii
+ 
+ - 25.2.3 Applying Dirichlet processes to mixture modeling 885
+ - 25.2.4 Fitting a DP mixture model 886
+ - 25.3 Affinity propagation 887
+ - 25.4 Spectral clustering 890
+ - 25.4.1 Graph Laplacian 891
+ - 25.4.2 Normalized graph Laplacian 892
+ - 25.4.3 Example 893
+ - 25.5 Hierarchical clustering 893
+ - 25.5.1 Agglomerative clustering 895
+ - 25.5.2 Divisive clustering 898
+ - 25.5.3 Choosing the number of clusters 899
+ - 25.5.4 Bayesian hierarchical clustering 899
+ - 25.6 Clustering datapoints and features 901
+ - 25.6.1 Biclustering 903
+ - 25.6.2 Multi-view clustering 903
+  
+### 26 Graphical model structure learning 907
+
+ - 26.1 Introduction 907
+ - 26.2 Structure learning for knowledge discovery 908
+ - 26.2.1 Relevance networks 908
+ - 26.2.2 Dependency networks 909
+ - 26.3 Learning tree structures 910
+ - 26.3.1 Directed or undirected tree? 911
+ - 26.3.2 Chow-Liu algorithm for finding the ML tree structure 912
+ - 26.3.3 Finding the MAP forest 912
+ - 26.3.4 Mixtures of trees 914
+ - 26.4 Learning DAG structures 914
+ - 26.4.1 Markov equivalence 914
+ - 26.4.2 Exact structural inference 916
+ - 26.4.3 Scaling up to larger graphs 920
+ - 26.5 Learning DAG structure with latent variables 922
+ - 26.5.1 Approximating the marginal likelihood when we have missing data 922
+ - 26.5.2 Structural EM 925
+ - 26.5.3 Discovering hidden variables 926
+ - 26.5.4 Case study: Google’s Rephil 928
+ - 26.5.5 Structural equation models * 929
+ - 26.6 Learning causal DAGs 931
+ - 26.6.1 Causal interpretation of DAGs 931
+ - 26.6.2 Using causal DAGs to resolve Simpson’s paradox 933
+ - 26.6.3 Learning causal DAG structures 935
+ - 26.7 Learning undirected Gaussian graphical models 938
+ - 26.7.1 MLE for a GGM 938
+ - 26.7.2 Graphical lasso 939
+ - 26.7.3 Bayesian inference for GGM structure * 941
+ - 26.7.4 Handling non-Gaussian data using copulas * 942
+  
+  #### xxiv CONTENTS
+  
+ - 26.8 Learning undirected discrete graphical models 942
+ - 26.8.1 Graphical lasso for MRFs/CRFs 942
+ - 26.8.2 Thin junction trees 944
+  
+### 27 Latent variable models for discrete data 945
+
+ - 27.1 Introduction 945
+ - 27.2 Distributed state LVMs for discrete data 946
+ - 27.2.1 Mixture models 946
+ - 27.2.2 Exponential family PCA 947
+ - 27.2.3 LDA and mPCA 948
+ - 27.2.4 GaP model and non-negative matrix factorization 949
+ - 27.3 Latent Dirichlet allocation (LDA) 950
+ - 27.3.1 Basics 950
+ - 27.3.2 Unsupervised discovery of topics 953
+ - 27.3.3 Quantitatively evaluating LDA as a language model 953
+ - 27.3.4 Fitting using (collapsed) Gibbs sampling 955
+ - 27.3.5 Example 956
+ - 27.3.6 Fitting using batch variational inference 957
+ - 27.3.7 Fitting using online variational inference 959
+ - 27.3.8 Determining the number of topics 960
+ - 27.4 Extensions of LDA 961
+ - 27.4.1 Correlated topic model 961
+ - 27.4.2 Dynamic topic model 962
+ - 27.4.3 LDA-HMM 963
+ - 27.4.4 Supervised LDA 967
+ - 27.5 LVMs for graph-structured data 970
+ - 27.5.1 Stochastic block model 971
+ - 27.5.2 Mixed membership stochastic block model 973
+ - 27.5.3 Relational topic model 974
+ - 27.6 LVMs for relational data 975
+ - 27.6.1 Infinite relational model 976
+ - 27.6.2 Probabilistic matrix factorization for collaborative filtering 979
+ - 27.7 Restricted Boltzmann machines (RBMs) 983
+ - 27.7.1 Varieties of RBMs 985
+-  27.7.2 Learning RBMs 987
+-  27.7.3 Applications of RBMs 991
+  
+### 28 Deep learning 995
+
+ - 28.1 Introduction 995
+ - 28.2 Deep generative models 995
+ - 28.2.1 Deep directed networks 996
+ - 28.2.2 Deep Boltzmann machines 996
+ - 28.2.3 Deep belief networks 997
+ - 28.2.4 Greedy layer-wise learning of DBNs 998
+ - 28.3 Deep neural networks 999
+  
+  #### CONTENTS xxv
+  
+ - 28.3.1 Deep multi-layer perceptrons 999
+ - 28.3.2 Deep auto-encoders 1000
+ - 28.3.3 Stacked denoising auto-encoders 1001
+ - 28.4 Applications of deep networks 1001
+ - 28.4.1 Handwritten digit classification using DBNs 1001
+ - 28.4.2 Data visualization and feature discovery using deep auto-encoders 1002
+ - 28.4.3 Information retrieval using deep auto-encoders (semantic hashing) 1003
+ - 28.4.4 Learning audio features using 1d convolutional DBNs 1004
+ - 28.4.5 Learning image features using 2d convolutional DBNs 1005
+ - 28.5 Discussion 1005
   
 Notation 1009
 Bibliography 1015
